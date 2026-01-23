@@ -1,0 +1,32 @@
+{
+  "name": "server-master",
+  "version": "1.0.0",
+  "description": "Uma plataforma profissional para compra e venda de servidores Discord, bots, mapas Roblox e muito mais.",
+  "main": "html/index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Build process here'"
+  },
+  "keywords": [
+    "discord",
+    "servidor",
+    "venda",
+    "compra",
+    "bots",
+    "roblox",
+    "comunidade"
+  ],
+  "author": "Gustavo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gustavo445-br/Site-"
+  },
+  "homepage": "servermaster.netlify.app",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}

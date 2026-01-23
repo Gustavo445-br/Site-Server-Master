@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Master</title>
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+  body {
+    background: red !important;
+    color: white !important;
+  }
+</style>
+
+
+</head>
+
+<body>
+    <body>
+  <h1 style="background:red;color:white;padding:40px">
+    TESTE NETLIFY — SE VOCÊ ESTÁ VENDO ISSO, É O ARQUIVO CERTO
+  </h1>
+
+    <!-- Navbar de Navegação -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">🛠 Server Master 🔧</div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#discord" class="nav-link" onclick="showSection('discord')">Discord</a></li>
+                <li><a href="#info" class="nav-link" onclick="showSection('info')">Informações</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" onclick="toggleServerDropdown(event)">Compre um Servidor ▼</a>
+                    <div class="dropdown-menu" id="serverDropdown">
+                        <button class="dropdown-btn" onclick="showSection('servidor-comunidade')">🛒 Servidor de Comunidade Básico</button>
+                        <button class="dropdown-btn" onclick="showSection('servidor-loja')">🛒 Servidor de Loja</button>
+                    </div>
+                </li>
+                <li><a href="#bot" class="nav-link" onclick="showSection('bot')">Compre um Bot</a></li>
+                <li><a href="#mapa" class="nav-link" onclick="showSection('mapa')">Compre um Mapa Roblox</a></li>
+                <li><a href="#pack" class="nav-link" onclick="showSection('pack')">Compre um Pack</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <!-- Seção Discord -->
+        <section id="discord" class="content-section active">
+            <div class="content-box">
+                <h1>Bem-vindo ao Server Master!</h1>
+                <p>Clique no botão abaixo para entrar no nosso servidor Discord:</p>
+                <a href="https://discord.gg/Nq6RgcM5hH" target="_blank" class="btn btn-primary">
+                    📱 Entrar no Discord
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção Informações -->
+        <section id="info" class="content-section">
+            <div class="content-box">
+                <h1>🛠 𝙎𝙚𝙧𝙫𝙚𝙧 𝙈𝙖𝙨𝙩𝙚𝙣🔧</h1>
+                
+                <p>Precisa criar um servidor Discord do zero, <strong>recuperar um servidor raidado</strong> ou adquirir recursos prontos para seu projeto?</p>
+                <p>No 🛠 𝙎𝙚𝙧𝙫𝙚𝙧 𝙈𝙖𝙨𝙩𝙚𝙧🔧 você encontra tudo isso em um só lugar!</p>
+
+                <h2>Nossos Serviços:</h2>
+                <ul class="services-list">
+                    <li>🛠️ Criação de servidores</li>
+                    <li>🔧 Recuperação de servidores raidados</li>
+                    <li>🛡️ Organização e segurança</li>
+                    <li>🎫 Atendimento profissional via tickets</li>
+                    <li>⭐ Avaliações reais da comunidade</li>
+                </ul>
+
+                <h2>Produtos Disponíveis:</h2>
+                <ul class="products-list">
+                    <li>💻 Venda de servidores prontos</li>
+                    <li>🤖 Bots à venda</li>
+                    <li>🎮 Mapas de Roblox à venda</li>
+                    <li>🚀 E em breve, muito mais!</li>
+                </ul>
+
+                <div class="cta-section">
+                    <p><strong>👉 Entre agora e fale com a equipe clicando aqui:</strong></p>
+                    <a href="https://discord.gg/X76CxwvW3Y" target="_blank" class="btn btn-secondary">
+                        Acesse o Servidor Oficial
+                    </a>
+                </div>
+
+                <div class="footer-text">
+                    <p><strong>✅ Organização • Segurança • Profissionalismo</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Servidor de Comunidade Básico -->
+        <section id="servidor-comunidade" class="content-section">
+            <div class="content-box">
+                <h1>💻 SERVIDORES À VENDA 💻</h1>
+                <p><strong>Estamos com servidores disponíveis para venda, ideais para comunidades, projetos, bots, divulgação ou outros fins no Discord.</strong></p>
+                
+                <div class="info-box">
+                    <p>📌 Caso queira ter mais informações abra um ticket no nosso servidor oficial, e caso queira ver as avaliações dos clientes dê uma olhada no canal de avaliações no nosso servidor principal também.</p>
+                </div>
+
+                <p class="footer-credit">➥🛠 𝙎𝙚𝙧𝙫𝙚𝙧 𝙈𝙖𝙨𝙩𝙚𝙧🔧 • © Todos os direitos reservados.</p>
+
+                <div class="server-card">
+                    <img src="https://media.discordapp.net/attachments/1425999620739305507/1459221126012993709/ChatGPT_Image_9_de_jan._de_2026_13_05_29.png?ex=69744953&is=6972f7d3&hm=350c68d17f3eb173f6e0c2e30a25786cb4c027d9523921605223dd4f94d905eb&=&format=webp&quality=lossless&width=1240&height=826" alt="Servidor de Comunidade Básico" class="server-image">
+                    
+                    <h2>🛒 Servidor de Comunidade a Venda 👥</h2>
+                    <p><strong>Temos um servidor top com 20 canais, e 17 cargos por apenas 11,99 reais.</strong></p>
+                    
+                    <h3>De que se trata o servidor?</h3>
+                    <p>É um servidor básico de comunidade, com 20 canais e 17 cargos como já disse anteriormente, ele é bem básico, os canais e cargos não são configurados ainda.</p>
+                    
+                    <p><strong>Link de convite para acessar o servidor e dar uma olhada:</strong></p>
+                    <p class="notice">(Após você entrar no servidor terá 24h para dar uma olhada nele.)</p>
+                    <a href="https://discord.gg/cQNVYv3MNu" target="_blank" class="btn btn-primary">
+                        Acessar Servidor
+                    </a>
+
+                    <p class="support-text">❔ Dúvidas? Entre em contato com o suporte em ⁠⌠🎫⌡suporte-ticket no nosso servidor oficial.</p>
+                    <p class="seller-text"><strong>Vendedor: @gustavo.br0</strong></p>
+
+                    <h3>Como comprar:</h3>
+                    <p>Entre no nosso servidor oficial: <a href="https://discord.gg/qxBUWzeTrU" target="_blank" class="link-text">https://discord.gg/qxBUWzeTrU</a> e vá até o canal <strong>"#【👥】servidor-de-comunidade-básico"</strong> e faça a sua compra.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Servidor de Loja -->
+        <section id="servidor-loja" class="content-section">
+            <div class="content-box">
+                <h1>💻 SERVIDORES À VENDA 💻</h1>
+                <p><strong>Estamos com servidores disponíveis para venda, ideais para comunidades, projetos, bots, divulgação ou outros fins no Discord.</strong></p>
+                
+                <div class="info-box">
+                    <p>📌 Caso queira ter mais informações abra um ticket no nosso servidor oficial, e caso queira ver as avaliações dos clientes dê uma olhada no canal de avaliações no nosso servidor principal também.</p>
+                </div>
+
+                <p class="footer-credit">➥🛠 𝙎𝙚𝙧𝙫𝙚𝙧 𝙈𝙖𝙨𝙩𝙞𝙖𝙣🔧 • © Todos os direitos reservados.</p>
+
+                <div class="server-card">
+                    <img src="https://media.discordapp.net/attachments/1425999620739305507/1458568169731129709/img_serv_a_venda1.png?ex=69748c36&is=69733ab6&hm=d97b2f58c83b8be804bbbe3d5a402a7ba38621b76f8c561726b87a642bd74718&=&format=webp&quality=lossless&width=1240&height=826" alt="Servidor de Loja" class="server-image">
+                    
+                    <h2>🛒 Servidor de Loja a Venda 💵</h2>
+                    <p><strong>Temos um servidor top com 34 canais, e 140 cargos por apenas 10,00 reais.</strong></p>
+                    
+                    <h3>De que se trata o servidor?</h3>
+                    <p>É um servidor comum de loja, com 34 canais e 140 cargos como já disse anteriormente, vem com bot de administração e de segurança, os canais e cargos não são configurados ainda.</p>
+                    
+                    <p><strong>Link de convite para acessar o servidor e dar uma olhada:</strong></p>
+                    <p class="notice">(Após você entrar no servidor terá 24h para dar uma olhada nele.)</p>
+                    <a href="https://discord.gg/8kMgth4r" target="_blank" class="btn btn-primary">
+                        Acessar Servidor
+                    </a>
+
+                    <p class="support-text">❔ Dúvidas? Entre em contato com o suporte em #⌠🎫⌡suporte-ticket</p>
+                    <p class="seller-text"><strong>Vendedor: @junin_novin</strong></p>
+
+                    <h3>Como comprar:</h3>
+                    <p>Entre no nosso servidor oficial: <a href="https://discord.gg/qxBUWzeTrU" target="_blank" class="link-text">https://discord.gg/qxBUWzeTrU</a> e vá até o canal <strong>"#【💰】servidor-de-loja"</strong> e faça a sua compra.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Compre um Bot -->
+        <section id="bot" class="content-section">
+            <div class="content-box">
+                <h1>Compre um Bot</h1>
+                <p class="coming-soon">Em breve...</p>
+                <p class="info-text">(Mas pode ser comprado no nosso servidor oficial.)</p>
+                <a href="https://discord.gg/Nq6RgcM5hH" target="_blank" class="btn btn-primary">
+                    Acesse o Servidor Discord
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção Compre um Mapa Roblox -->
+        <section id="mapa" class="content-section">
+            <div class="content-box">
+                <h1>Compre um Mapa Roblox</h1>
+                <p class="coming-soon">Em breve...</p>
+                <p class="info-text">(Mas pode ser comprado no nosso servidor oficial.)</p>
+                <a href="https://discord.gg/Nq6RgcM5hH" target="_blank" class="btn btn-primary">
+                    Acesse o Servidor Discord
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção Compre um Pack -->
+        <section id="pack" class="content-section">
+            <div class="content-box">
+                <h1>Compre um Pack</h1>
+                <p class="coming-soon">Em breve...</p>
+                <p class="info-text">(Mas pode ser comprado no nosso servidor oficial.)</p>
+                <a href="https://discord.gg/Nq6RgcM5hH" target="_blank" class="btn btn-primary">
+                    Acesse o Servidor Discord
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
