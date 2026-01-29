@@ -20,6 +20,52 @@ body {
     line-height: 1.6;
 }
 
+/* Hero / Capa */
+.hero {
+    height: 60vh;
+    min-height: 360px;
+    background-image: url("../Imagens/Imagem%20Capa%20do%20Meu%20servidor.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 2.8rem;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        height: 45vh;
+    }
+    .hero-title {
+        font-size: 1.6rem;
+    }
+}
+
 /* Navbar */
 .navbar {
     background-color: var(--border-color);
