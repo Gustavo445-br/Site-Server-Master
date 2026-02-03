@@ -5,12 +5,14 @@
 }
 
 :root {
-    --primary-color: #7289da;
-    --secondary-color: #5865f2;
-    --background-color: #36393f;
-    --text-color: #dcddde;
-    --border-color: #202225;
-    --hover-color: #40444b;
+    --primary-color: #7c5cff;
+    --secondary-color: #00e0a2;
+    --background-color: #0f1724;
+    --text-color: #e6eef8;
+    --border-color: #0b1220;
+    --hover-color: rgba(255,255,255,0.03);
+    --glass: rgba(255,255,255,0.04);
+    --accent-gradient: linear-gradient(90deg, #7c5cff 0%, #00e0a2 100%);
 }
 
 body {
@@ -37,7 +39,8 @@ body {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(3,8,18,0.5);
+    backdrop-filter: blur(6px) saturate(110%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,11 +208,12 @@ body {
 }
 
 .content-box {
-    background-color: var(--hover-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 40px 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255,255,255,0.03);
+    border-radius: 14px;
+    padding: 36px 28px;
+    box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+    backdrop-filter: blur(6px);
 }
 
 /* Tipografia */
@@ -250,39 +254,49 @@ p {
     margin-bottom: 10px;
 }
 
-/* Botões */
+/* Botões (visual moderno) */
 .btn {
-    display: inline-block;
-    padding: 12px 30px;
-    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: 12px;
     text-decoration: none;
-    font-size: 1.05em;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: transform 180ms ease, box-shadow 180ms ease, opacity 120ms ease;
     cursor: pointer;
     border: none;
+    background: transparent;
+    color: var(--text-color);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn:focus {
+    outline: 3px solid rgba(124,92,255,0.18);
+    outline-offset: 4px;
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    color: white;
+    background: var(--accent-gradient);
+    color: #031022;
+    box-shadow: 0 8px 28px rgba(124,92,255,0.18);
 }
 
 .btn-primary:hover {
-    background-color: var(--secondary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(114, 137, 218, 0.4);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 14px 40px rgba(124,92,255,0.22);
 }
 
 .btn-secondary {
-    background-color: var(--secondary-color);
-    color: white;
+    background: linear-gradient(90deg, rgba(0,224,162,0.14), rgba(124,92,255,0.08));
+    color: var(--text-color);
+    border: 1px solid rgba(255,255,255,0.04);
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(114, 137, 218, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,224,162,0.08);
 }
 
 /* Textos Especiais */
