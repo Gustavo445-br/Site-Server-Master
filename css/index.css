@@ -87,6 +87,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    overflow: hidden;
 }
 
 .navbar-brand {
@@ -96,14 +97,18 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
+    min-width: 0;
+    flex-shrink: 1;
 }
 
 .navbar-logo {
-    height: 45px;
-    width: auto;
+    height: 28px;
+    width: 28px;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    flex-shrink: 0;
+    display: block;
 }
 
 .nav-menu {
@@ -670,7 +675,8 @@ p {
     }
 
     .navbar-logo {
-        height: 38px;
+        height: 24px;
+        width: 24px;
     }
 
     .menu-toggle {
@@ -756,7 +762,8 @@ p {
     }
 
     .navbar-logo {
-        height: 32px;
+        height: 20px;
+        width: 20px;
     }
 
     h1 {
