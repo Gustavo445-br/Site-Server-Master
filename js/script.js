@@ -81,3 +81,22 @@ document.addEventListener('click', function(event) {
         navMenu.classList.remove('active');
     }
 });
+
+// Função para toggle do FAQ (accordion)
+function toggleFAQ(button) {
+    const answer = button.nextElementSibling;
+    const isActive = answer.classList.contains('active');
+    
+    // Fecha todas as outras respostas
+    const allAnswers = document.querySelectorAll('.faq-answer');
+    const allQuestions = document.querySelectorAll('.faq-question');
+    
+    allAnswers.forEach(ans => ans.classList.remove('active'));
+    allQuestions.forEach(q => q.classList.remove('active'));
+    
+    // Se a resposta não estava ativa, abre ela
+    if (!isActive) {
+        answer.classList.add('active');
+        button.classList.add('active');
+    }
+}

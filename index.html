@@ -14,21 +14,25 @@
     <!-- Navbar de Navegação w -->
     <nav class="navbar">
         <div class="navbar-container">
-            <div class="navbar-brand">🛠 𝙎𝙚𝙧𝙫𝙚𝙧 𝙈𝙖𝙨𝙩𝙚𝙧🔧</div>
+            <div class="navbar-brand">
+                <img src="./Imagens/simbolo-do-servermaster.png" alt="Server Master Logo" class="navbar-logo">
+                <span>🛠 𝙎𝙚𝙧𝙫𝙚𝙧 𝙈𝙖𝙨𝙩𝙚𝙧🔧</span>
+            </div>
             <button class="menu-toggle" id="menuToggle">☰</button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#discord" class="nav-link" onclick="showSection('discord')">Discord</a></li>
-                <li><a href="#info" class="nav-link" onclick="showSection('info')">Informações</a></li>
+                <li><a href="#discord" class="nav-link" onclick="showSection('discord')">🏠 Início</a></li>
+                <li><a href="#info" class="nav-link" onclick="showSection('info')">ℹ️ Sobre</a></li>
                 <li class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" onclick="toggleServerDropdown(event)">Compre um Servidor ▼</a>
+                    <a href="#" class="nav-link dropdown-toggle" onclick="toggleServerDropdown(event)">🛍️ Produtos ▼</a>
                     <div class="dropdown-menu" id="serverDropdown">
-                        <button class="dropdown-btn" onclick="showSection('servidor-comunidade')">🛒 Servidor de Comunidade Básico</button>
-                        <button class="dropdown-btn" onclick="showSection('servidor-loja')">🛒 Servidor de Loja</button>
+                        <button class="dropdown-btn" onclick="showSection('servidor-comunidade')">💻 Servidor de Comunidade</button>
+                        <button class="dropdown-btn" onclick="showSection('servidor-loja')">💰 Servidor de Loja</button>
+                        <button class="dropdown-btn" onclick="showSection('bot')">🤖 Bots Discord</button>
+                        <button class="dropdown-btn" onclick="showSection('mapa')">🎮 Mapas Roblox</button>
+                        <button class="dropdown-btn" onclick="showSection('pack')">📦 Packs Completos</button>
                     </div>
                 </li>
-                <li><a href="#bot" class="nav-link" onclick="showSection('bot')">Compre um Bot</a></li>
-                <li><a href="#mapa" class="nav-link" onclick="showSection('mapa')">Compre um Mapa Roblox</a></li>
-                <li><a href="#pack" class="nav-link" onclick="showSection('pack')">Compre um Pack</a></li>
+                <li><a href="#faq" class="nav-link" onclick="showSection('faq')">❓ FAQ</a></li>
             </ul>
         </div>
     </nav>
@@ -43,6 +47,17 @@
                 <a href="https://discord.gg/Nq6RgcM5hH" target="_blank" class="btn btn-primary">
                     📱 Entrar no Discord
                 </a>
+            </div>
+
+            <!-- Créditos do Site -->
+            <div class="site-credits">
+                <hr class="credits-divider">
+                <p class="credits-text">
+                    © 2025-2026 <strong>🛠 Server Master 🔧</strong> | Todos os direitos reservados
+                </p>
+                <p class="credits-subtext">
+                    Desenvolvido com ❤️ para a comunidade Discord
+                </p>
             </div>
         </section>
 
@@ -188,6 +203,96 @@
                 <a href="https://discord.gg/Nq6RgcM5hH" target="_blank" class="btn btn-primary">
                     Acesse o Servidor Discord
                 </a>
+            </div>
+        </section>
+
+        <!-- Seção FAQ -->
+        <section id="faq" class="content-section">
+            <div class="content-box">
+                <h1>❓ Perguntas Frequentes</h1>
+                <p class="faq-intro">Encontre respostas para as dúvidas mais comuns sobre nossos serviços.</p>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Como funciona a compra de um servidor?</span>
+                            <span class="faq-icon">▶</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Para comprar um servidor, entre no nosso servidor oficial do Discord, abra um ticket no canal de suporte ou dirija-se ao canal específico do produto que deseja. Após confirmar a compra e o pagamento, você receberá acesso ao servidor em até 24 horas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Quanto tempo leva para receber o servidor após a compra?</span>
+                            <span class="faq-icon">▶</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>O servidor é entregue dentro de 24 horas após a confirmação do pagamento. Você receberá um link de convite para acessar e 24 horas para avaliar se está satisfeito com a compra.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Posso devolver o servidor se não gostar?</span>
+                            <span class="faq-icon">▶</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! Você tem 24 horas após receber o servidor para avaliá-lo. Se não estiver satisfeito, entre em contato com nosso suporte para solicitar empenho ou ajustes no servidor.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Vocês fazem customização de servidores?</span>
+                            <span class="faq-icon">▶</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! Oferecemos serviços de customização, configuração de canais, cargos e segurança. Abra um ticket no nosso servidor para solicitar um orçamento personalizado.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Como recuperar um servidor que foi raidado?</span>
+                            <span class="faq-icon">▶</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oferecemos serviço de recuperação de servidores raidados. Nossos especialistas irão restaurar o servidor, implementar segurança adicional e reconfigurar tudo conforme necessário. Entre em contato conosco para um orçamento.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Qual é o preço dos servidores?</span>
+                            <span class="faq-icon">▶</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nossos preços variam de acordo com o tipo e configuração do servidor. Servidores básicos começam a partir de R$ 10,00. Visite a seção de "Compre um Servidor" para ver todas as opções disponíveis.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Vocês oferecem garantia ou suporte técnico?</span>
+                            <span class="faq-icon">▶</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! Oferecemos suporte técnico completo através de tickets no Discord. Você tem acesso a nossa equipe 24/7 para tirar dúvidas, resolver problemas e solicitar ajustes no seu servidor.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Como posso entrar em contato com o suporte?</span>
+                            <span class="faq-icon">▶</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Você pode entrar em contato conosco de várias formas: através de tickets no nosso servidor Discord oficial, mensagem direta para um de nossos moderadores, ou comentário direto em uma publicação. Nos vemos no Discord!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
