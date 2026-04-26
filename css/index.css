@@ -87,7 +87,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .navbar-brand {
